@@ -44,6 +44,7 @@ class physics_formulas_mechanics{
 			double univesal_gravition=(G*(mass_1 * mass_2))/pow(distance,2);
 			return univesal_gravition;
 		}
+
 };	
 class physics_formulas_electric{
 	public: 
@@ -98,54 +99,54 @@ class main_option{
 				cout<<"Enter the distance where the corp working on :";cin>>distance;
 				int angle;
 				cout<<"Enter the angle of the distance vecteur and force vecteur: (please enter the angle with radian and with decimal number like(3,14 not pi)) :";cin>>angle;
-				cout<<"RESULT :";cout<<setprecision(10000000)<<Calculator.work_Solid(Force,distance,angle)<<endl;
+				cout<<"RESULT :";cout<<setprecision(15)<<Calculator.work_Solid(Force,distance,angle)<<endl;
 			}
 			if(m_choices==2){
 				int mass;
 				cout<<"Enter the mass of Pesanteur :";cin>>mass;
 				int haut;
 				cout<<"Enter the height Pesanteur :";cin>>haut;
-				cout<<"RESULT :";cout<<setprecision(10000000)<<Calculator.work_P(mass,haut)<<endl;
+				cout<<"RESULT :";cout<<setprecision(15)<<Calculator.work_P(mass,haut)<<endl;
 			}	
 			if(m_choices==3){
 				int mass;
 				cout<<"Enter the mass of the corp :";cin>>mass;
 				int speed;
 				cout<<"Enter the speed of the corp :";cin>>speed;
-				cout<<"RESULT :";cout<<setprecision(10000000)<<Calculator.kinetic_energie_ofSolid(mass,speed);
+				cout<<"RESULT :";cout<<setprecision(15)<<Calculator.kinetic_energie_ofSolid(mass,speed);
 			}
 			if(m_choices==4){
 				int mass;
 				cout<<"Enter the mass of the corp :";cin>>mass;
 				int haut;
 				cout<<"Enter the height where the corp is :";cin>>haut;
-				cout<<"RESULT :";cout<<setprecision(10000000)<<Calculator.potentiel_energie_ofSolid(mass,haut)<<endl;
+				cout<<"RESULT :";cout<<setprecision(15)<<Calculator.potentiel_energie_ofSolid(mass,haut)<<endl;
 			}
 			if(m_choices==5){
 				int force;
 				cout<<"Enter positive or negative force :";cin>>force;
 				int raduis;
 				cout<<"Enter the distance of the thread :";cin>>raduis;
-				cout<<"RESULT :";cout<<"RESULT :";cout<<setprecision(10000000)<<Calculator.moment_of_force(force,raduis)<<endl;
+				cout<<"RESULT :";cout<<"RESULT :";cout<<setprecision(15)<<Calculator.moment_of_force(force,raduis)<<endl;
 			}
 			if(m_choices==6){
 				int mass;
 				cout<<"Enter mass of the corp :";cin>>mass;
 				int acceleration;
 				cout<<"Enter acceleration of the corp :";cin>>acceleration;
-				cout<<"RESULT :";cout<<setprecision(10000000)<<Calculator.force(mass,acceleration)<<endl;
+				cout<<"RESULT :";cout<<setprecision(15)<<Calculator.force(mass,acceleration)<<endl;
 			}
 			if(m_choices==7){
 				cout<<"ATTENTION : AS I SAID YOU HAVE TO CALCULATE THE POTENTIAL & KINETIC ENERGY"<<endl;
 				int ec,epp;
 				cout<<"ENTER THE KINETIC ENERGY :";cin>>ec;
 				cout<<"ENTER THE POTENTIAL ENERGY :";cin>>epp;
-				cout<<"RESULT :";cout<<setprecision(10000000)<<Calculator.mechanical_energie(ec,epp)<<endl;
+				cout<<"RESULT :";cout<<setprecision(15)<<Calculator.mechanical_energie(ec,epp)<<endl;
 			}
 			if(m_choices==8){
 				int mass;
 				cout<<"Enter the mass of particle :";cin>>mass;
-				cout<<"RESULT :";cout<<setprecision(10000000)<<Calculator.particle_energie(mass)<<endl;
+				cout<<"RESULT :";cout<<setprecision(15)<<Calculator.particle_energie(mass)<<endl;
 			}
 			if(m_choices==9){
 				int mass_1,mass_2;
@@ -153,7 +154,7 @@ class main_option{
 				cout<<"Enter the mass of corp number 1 :";cin>>mass_1;
 				cout<<"Enter the mass of corp number 2 :";cin>>mass_2;
 				cout<<"Enter the distance between this 2 corps :";cin>>distance;
-				cout<<"RESULT :";cout<<setprecision(10000000)<<Calculator.univesal_gravition(mass_1,mass_2,distance);
+				cout<<"RESULT :";cout<<setprecision(15)<<Calculator.univesal_gravition(mass_1,mass_2,distance);
 			}
 			cout<<endl;
 			for(int i=0;i<50;i++){
