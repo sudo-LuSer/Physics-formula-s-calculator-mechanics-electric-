@@ -7,6 +7,6 @@
   <h3><li>Download the Folder from this page</li></h3>
   <h3><li>Enter to the folder</li></h3>
   <h3><li>Execute Physics Calculator</li></h3>
-  <h3><li>Enjoy ! (the idea of the instruction from dollie )</li></h3>
+  <h3><li>Enjoy !</li></h3>
 </ol>
 <h1>By:Nasroallah(Sudo-Lu$er) Thank you ! </h1>
